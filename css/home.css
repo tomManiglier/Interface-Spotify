@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url(../GothamMedium.ttf);
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham';
+}
+
+::selection {
+    background-color: #6078eb;
+    color: #fff;
+}
+
+.annonce {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    background-color: #6078eb;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 100px;
+    transition: .6s;
+}
+
+.caroussel {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    height: 10px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caroussel span {
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: .1s;
+    cursor: pointer;
+}
+
+#next {
+    height: 7px;
+    width: 7px;
+}
+
+.annonce img {
+    height: 220px;
+}
+
+.txt-annonce {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.annonce h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.annonce h1 {
+    font-size: 70px;
+    color: #fff;
+}
+
+.annonce p {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.annonce p:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.container h3 {
+    color: #000;
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.content a {
+    text-decoration: none;
+    color: #000;
+}
+
+.card {
+    height: 226px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.card p {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.artists img {
+    border-radius: 50%;
+}
