@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url(../GothamMedium.ttf);
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham';
+}
+
+::selection {
+    background-color: var(--bg-color);
+    color: #fff;
+}
+
+.annonce {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 100px;
+    transition: .6s;
+}
+
+.annonce img {
+    height: 220px;
+}
+
+.txt-annonce {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.annonce h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.annonce h1 {
+    font-size: 70px;
+    color: #fff;
+}
+
+.annonce p {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.annonce p:hover {
+    text-decoration: underline;
+}
